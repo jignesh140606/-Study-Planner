@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Study Planner</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Study Planner</h1>
+    
+    <form id="sessionForm">
+      <label for="topic">Topic to Study:</label>
+      <input type="text" id="topic" required />
+      
+      <label for="sessionTime">Session Time:</label>
+      <input type="datetime-local" id="sessionTime" required />
+      
+      <label for="duration">Session Duration (minutes):</label>
+      <input type="number" id="duration" required />
+      
+      <button type="submit">Add Session</button>
+    </form>
+    
+
+    <h2>Today's Study Sessions</h2>
+    <ul id="sessionsList"></ul>
+    
+    
+    <button id="fetchMaterialsButton">Fetch Study Materials</button>
+  </div>
+  
+  <script src="app.js"></script>
+</body>
+</html>
